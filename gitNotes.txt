@@ -1,0 +1,35 @@
+there are key words to know here==========:
+1.)repository-it it where the project files being stored either online or locally on the computer
+   to if you what a new repository on git hub youy can just click on the + icon on the top right corner of the git hub
+   home page.
+2.)Cloning it is a way of downloading repository to you the local machine then you can make changes and then 
+   commit those changes so that they can the affecting the origin repository which is online there are 
+    many command lines needed to be known in order to do that:
+    run git clone <repository url> (to clone online repository)
+    run ls(to list all files in the repository)
+    run cd <repository name> (to change derictory into that folder)
+    run touch <file name> (to create new file withint the repository)
+    run code . (to open repository in vs code so that you can make changes within the repository)
+    run git add . (to me git track those files)
+3.)Commits a method of pusing local changes to the origin repository online:
+   run git commit -m "Commit message" (where message should represent changes that you made)
+   run git commit -am "Commit message" (to do both adding and commit at the same time)
+   run git status (to see changes made)
+   run git push (to make changes reflect on the web)
+   run git pull (to pull any remote changes to your local machine)
+4.)Merge Conflicts sometimes you and your collaboration teams can make changes to the same line but those changes are diffirent this causes conflicts when you try to pull or push 
+   so the text editors have a smart way of solving these issues.You can choose what to change and which choice to leave or delete.
+5.)Reset and logging used to reset changes and also tracking changes:
+  run git log (to see all changes made within the repository)
+  run git reset --hard <commit>(where commit is the commit code which can be found on git log  and will rest that commit only)
+  run git rest -- hard origin/master(reseting the code to the current version online)
+6.)Branching it is a way that can be used to avoid over crowding of changes which can later cause the obsticles to debug
+   this helps to test new features without affecting the existing ones:
+   run git branch(to see the current branch by default the main branch is master)
+   run git checkout -b <new branch name>(to make new branch)
+   run git checkout <branch name> (to switch between branches)
+   run git merge <other branch to merge with>(to join branches together)
+7.) Forking and pul request are the feature on github which makes the collaboration process easie especially on large projects like bootstrap fork used to take the 
+    repository on the open source and start to work on it as its your own then after working on it and feel that it can help you can pullrequest from project owners 
+    so that they can put your changes that you made on their project.
+   
