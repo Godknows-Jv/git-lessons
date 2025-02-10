@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Advanced Search</title>
+    <style>
+        body{
+            color: gray;
+        }
+         header ul { 
+                display: grid;
+                grid-template-columns: 1fr;
+                position:fixed;
+                list-style: none;
+                right:0;
+  
+                
+
+            }
+        header ul a{
+                text-decoration: none;
+                color: #3c4043;
+                font-size: 25px;
+            }
+        header ul a:hover{
+                text-decoration: underline;
+                color: #a1a3a4;
+            }
+
+        #main-title{
+              color:red;
+              font-size: 20px;
+              padding: 50px 0px 30px 0px;
+              
+        }
+        #divider{
+            background-color: #c0c0c0;
+            width: 100%;
+            height: 1px;
+            margin-bottom: 30px;
+
+        }
+
+        #titles{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            font-weight: bold;
+            font-size: 17px;
+            margin-bottom: 2%;
+        }
+        #container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:10px;
+        }
+
+        form{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            row-gap: 22px;
+            column-gap: 0px;
+            
+
+            
+        }
+
+        #comments{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            
+        }
+        form input{
+             height: 30px;
+             width: 95%;
+             border: solid 1px #c0c0c0;;
+        }
+        #btn{
+                width: 200px;
+                border: none;
+                color: #ffffff;
+                background-color: #4d90fe;
+                background-image: -webkit-linear-gradient(top, #4d90fe, #4787ed);
+                border: 1px solid #3079ed;
+                border-radius: 3px;
+                
+            }
+        #btn:hover{
+                background-color:#4787ed;
+                background-image: -webkit-linear-gradient(top, #4787ed, #4d90fe);
+                border: 1px solid #3079ed;
+                cursor: pointer;
+            }
+        @media (max-width: 1000px) {
+            #comments,#comments-title {
+               display: none;
+               }
+            #container{
+                display: grid;
+                grid-template-columns: 1fr;
+                gap:10px;
+            }
+
+            
+            
+
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="index.html">Main Search</a></li>
+            
+        </ul>
+        <img src="logo.png" alt="my Logo" style="height: 30px; width: 150px; margin-top: 20px;">
+    </header>
+    <div id="main-title">
+        <label style="margin-left:10px">Advanced Search</label>
+    </div>
+    <div id="divider"></div>
+    <div id="titles">
+
+       <label>Find pages with...</label>
+       <label id="comments-title">To do this in the search box.</label>
+    </div>
+    <div id="container">
+        <form action="https://www.google.com/search">
+            <label for="input1">all these words:</label>
+            <input value="" autofocus="autofocus"name="as_q" type="text" id="input1">
+            <label for="input2">this exact word or phrase:</label>
+            <input id="input2" value="" name="as_epq" type="text">
+            <label for="input3">any of these words:</label>
+            <input id="input3" value="" name="as_oq" type="text">
+            <label for="input4">none of these words:</label>
+            <input id="input4" value="" name="as_eq" type="text">
+            <input id="btn" type="submit" value="Advanced Search">
+            
+        </form>
+        <div id="comments">
+              <label>Type the important words: tri-colour rat terrier</label>
+              <label>Put exact words in quotes: "rat terrier"</label>
+              <label>Type OR between all the words you want: miniature OR standard</label>
+              <label>Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</label>
+              
+              
+        </div>
+    </div>
+    
+    
+</body>
+</html>
