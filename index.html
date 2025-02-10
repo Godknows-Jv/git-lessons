@@ -1,15 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>
+    <head>
+        <title>Google Search</title>
+        <style>
+            header ul { 
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                position:fixed;
+                list-style: none;
+                right:0;
+  
+                
 
-        hello daddy!!!!! 
-        hello kitty!  
-    </h1>
-</body>
+            }
+            header ul a{
+                text-decoration: none;
+                color: #3c4043;
+                font-size: 25px;
+            }
+            header ul a:hover{
+                text-decoration: underline;
+                color: #a1a3a4;
+            }
+           .button {
+             background-color: #f8f9fa;
+             border: 1px solid #f8f9fa;
+              border-radius: 4px;
+             color: #3c4043;
+             font-family: Arial, sans-serif;
+             font-size: 14px;
+             margin: 11px 4px;
+             padding: 0 16px;
+             line-height: 27px;
+             height: 36px;
+             min-width: 54px;
+             text-align: center;
+             cursor: pointer;
+             user-select: none;
+            }
+            .button:hover{
+                background-color: #f8f9fa;
+                border-radius: 4px;
+                border: 0.3px solid #3c4043;
+                box-shadow: #a1a3a4 0px 1px 0px 0px;
+            }
+            #text-area{
+                display: flex;
+                 z-index: 3;
+                position: relative;
+                min-height: 44px;
+                background: #fff;
+                border: 1px solid #dfe1e5;
+                box-shadow: 0px 2px 8px 0px rgba(60, 64, 67, 0.25);
+                border-radius: 24px;
+                width: 638px;
+                max-width: 584px;
+                font-family: Arial, sans-serif;
+                font-size: 20px;
+                padding-left: 10px;
+                color: #3c4043;
+
+            }
+            
+            #search {
+                  display: grid;
+                  place-items: center;  
+                  height: 100vh;  
+                  margin: 0; 
+                       
+                  
+                  
+                
+                 
+
+            }
+            form {
+                text-align: center;
+                padding: 20px; 
+                display: grid;
+                place-items: center;
+                row-gap: 20px;
+                
+                
+                
+            }
+    </style>
+    </head>
+    <body>
+       <header>
+            <ul>
+                <li><a href="googleImageSearch.html">Image Search</a></li>
+                <li><a href="googleAdvancedSearch.html">Advanced Search</a></li>
+            </ul>
+        </header>
+        
+        <div id="search">
+            <form action="https://google.com/search" method="get">
+                <img src="logo.png" alt="Google logo">
+                <input type="text" id="text-area" name="q">
+                <div id="btns">
+                    <input class="button" type="submit" value="Google Search">
+                    <input class="button" type="submit" value="I'm Feeling Lucky" name="btnI" value="1">
+                </div>
+            
+            
+
+            </form>
+       </div>
+    </body>
 </html>
